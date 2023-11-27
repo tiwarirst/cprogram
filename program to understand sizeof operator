@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    int var ;
+    
+    printf("size of int=%d\n",sizeof(int));
+    printf("size of float=%f\n",sizeof(float));
+
+printf("sizze of an integer constant=%d\n",sizeof(45));
+    return 0;
+}
