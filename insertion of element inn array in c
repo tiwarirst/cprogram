@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main()
+{
+    int n,d;
+    printf("enter the size of array");
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++)
+    {printf("enter the %d element of array",i);
+    scanf("%d",&a[i]);}
+    printf("enter the elemnt want to inseart");
+    scanf("%d",&d);
+    int b[n+1];
+    for (int j=0;j<=n;j++)
+   { if(j==n)
+    b[n]=d;
+    else
+    b[j]=a[j];}
+    printf("array after inseartion\n");
+    for(int k=0;k<=n;k++)
+    printf("%d\n",b[k]);
+    
+    return 0;
+    }
