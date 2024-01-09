@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include<string.h>
+struct employee
+{
+  int base;
+  int pf;
+  int da;
+  char name[100];
+};
+int main()
+{struct employee e1;
+strcpy(e1.name,"jai shree ram\n");
+    printf("%s",e1.name);
+    printf("enter the  base salary");
+    scanf("%d",&e1.base);
+     printf("enter the  pf salary");
+    scanf("%d",&e1.pf);
+     printf("enter the  da salary");
+    scanf("%d",&e1.da);
+    struct employee e2;
+    strcpy(e2.name,"har har mahadev\n");
+     printf("%s",e2.name);
+    printf("enter the  base salary\n");
+    scanf("%d",&e2.base);
+     printf("enter the  pf salary");
+    scanf("%d",&e2.pf);
+     printf("enter the  da salary");
+    scanf("%d",&e2.da);
+    
+    int sum=e1.base+e1.pf+e1.da+e2.base+e2.pf+e2.da;
+    printf("%d summ",sum);
+    return 0;
+}
